@@ -80,15 +80,12 @@ body {
   width: 935px;
   margin: 0 auto;
   margin-top: 88px;
+  position: relative;
 }
 
 .esquerda {
   width: 100%;
   max-width: 614px;
-}
-
-.sidebar {
-  width: 293px;
 }
 
 .stories {
@@ -216,6 +213,7 @@ body {
   padding-top: 24px;
   position: sticky;
   top: 88px;
+  width: 293px;
 }
 
 .sidebar > .usuario {
