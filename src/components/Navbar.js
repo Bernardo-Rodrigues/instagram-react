@@ -1,5 +1,22 @@
 import logo from "../assets/img/logo.png"
 
+export default function Navbar(){
+    return(
+        <div class="navbar">
+            <div class="container">
+                <Logo mobile={false}/>
+                <Logo mobile={true}/>
+
+                <Middle mobile={false}/>
+                <Middle mobile={true}/>
+                  
+                <Icons mobile={false}/>
+                <Icons mobile={true}/>
+            </div>
+        </div>
+    );
+}
+
 function Logo( {mobile} ){
     if(!mobile){
         return(
@@ -52,21 +69,3 @@ function Icons( {mobile} ){
         );
     }
 }
-
-export default function Navbar(){
-    return(
-        <div class="navbar">
-            <div class="container">
-                <Logo mobile={false}/>
-                <Logo mobile={true}/>
-
-                <Middle mobile={false}/>
-                <Middle mobile={true}/>
-                  
-                <Icons mobile={false}/>
-                <Icons mobile={true}/>
-            </div>
-        </div>
-    );
-}
-

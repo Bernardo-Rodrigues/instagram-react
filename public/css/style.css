@@ -211,8 +211,11 @@ body {
 
 .sidebar {
   padding-top: 24px;
-  position: sticky;
-  top: 88px;
+  
+  position: fixed;
+  height: 100%;
+  left: calc(50% + 180px);
+
   width: 293px;
 }
 
@@ -307,6 +310,87 @@ body {
 .logo-mobile, .instagram-mobile {
   display: none !important;
 }
+.post-comments{
+  padding: 3px 10px 0;
+}
+.post-comments ion-icon{
+  font-size: 15px;
+}
+.comment-input ion-icon{
+  font-size: 20px;
+  margin-right: 5px;
+}
+.post-comments .seecomments{
+  color: #8e8e8e;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.post-comments p{
+  font-size: 14px;
+}
+.post-comments a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+
+  margin-right: 4px;
+}
+.post-comments .post-date{
+  font-size: 10px;
+  color: #8e8e8e;
+
+  margin: 4px 0 15px;
+}
+.post-comments a:hover{
+  text-decoration: underline;
+}
+.post-comments :last-child{
+  cursor: pointer;
+}
+.comment{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 18px;
+
+  margin-top: 5px;
+}
+
+.comment-input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  border-top: 1px solid #dbdbdb;
+  padding: 12px;
+}
+.comment-input .input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment-input input{
+  outline: 0;
+}
+.comment-input .input a{
+  margin-right: 7px;
+}
+.comment-input input{
+  border: 0;
+}
+.comment-input button{
+  border: 0;
+  background: transparent;
+  color: #B2DFFC;
+  cursor: pointer;
+  transition: color 0.3s
+}
+.comment-input button:hover {
+  color: #0095f6;
+}
 
 @media (max-width: 935px) {
   .sidebar {
@@ -389,3 +473,4 @@ body {
     top: 4px;
   }
 }
+
